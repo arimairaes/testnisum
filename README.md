@@ -76,7 +76,9 @@ Desarrolla una aplicación que exponga una **API RESTful** para la **creación d
 - **Swagger** para documentación de la API.
 
 - Se recomienda y se valorará mucho la utilización de **Patrones de Diseño** y **buenas prácticas**.
+# Docker
 
+El proyecto cuenta con un Dockerfile para una puesta en marcha sencilla, adicionalmente cuenta con una live demo en railway
 
 # Cómo Probar la API
 
