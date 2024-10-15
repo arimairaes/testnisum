@@ -383,7 +383,7 @@ Encabezados necesarios:
 
 - Authorization: Bearer tu-token-jwt-generado
 
-```
+```mermaid
 graph LR
     subgraph Cliente
         A[Cliente (Postman/Navegador)]
