@@ -382,7 +382,7 @@ Elimina un usuario por ID.
 Encabezados necesarios:
 
 - Authorization: Bearer tu-token-jwt-generado
-
+## Diagrama de la solución (Usando mermaid)
 ```mermaid
 graph LR
     subgraph cliente ["Cliente"]
