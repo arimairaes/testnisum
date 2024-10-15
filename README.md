@@ -1,6 +1,6 @@
 # NISUM Evaluacion Java - Gabriel Urrutia
 
-# Descripción del Proyecto
+# Instrucciones
 
 Desarrolla una aplicación que exponga una **API RESTful** para la **creación de usuarios**.
 
@@ -106,13 +106,6 @@ Puedes probar la API utilizando herramientas como **Postman** o **cURL**. A cont
 
 **URL completa:**
 
-
-Pensamiento sobre 41 segundos
-
-¡Claro! Aquí tienes el contenido actualizado para tu README.md, incluyendo instrucciones sobre cómo probar la API en la URL proporcionada y cómo utilizar Swagger. Todo está escapado en un solo bloque de texto para que puedas copiarlo:
-
-markdown
-Copiar código
 # Descripción del Proyecto
 
 Desarrolla una aplicación que exponga una **API RESTful** para la **creación de usuarios**.
