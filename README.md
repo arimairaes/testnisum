@@ -88,13 +88,6 @@ Para facilitar la exploración y prueba de la API, se ha habilitado Swagger UI.
 
 https://testnisum-production.up.railway.app/swagger-ui/index.html
 
-**Descripción:**
-
-Elimina un usuario por ID.
-
-Encabezados necesarios:
-
-- Authorization: Bearer tu-token-jwt-generado
 
 # Iniciar el servicio REST en local
 
@@ -110,35 +103,6 @@ La aplicación está desplegada y disponible en la siguiente URL:
 Puedes probar la API utilizando herramientas como **Postman** o **cURL**. A continuación, se detallan los pasos para probar cada uno de los endpoints disponibles.
 
 # Endpoints Disponibles
-
-1. **Registro de Usuario**
-2. **Inicio de Sesión**
-3. **Obtener Usuario por ID**
-4. **Listar Todos los Usuarios**
-5. **Actualizar Usuario**
-6. **Eliminar Usuario**
-
----
-
-## 1. Registro de Usuario
-
-**Endpoint:**
-
-- **Método HTTP:** `POST`
-- **URL:** `/register`
-
-**URL completa:**
-
-
-# Cómo Probar la API
-
-La aplicación está desplegada y disponible en la siguiente URL:
-
-**https://testnisum-production.up.railway.app/api/users**
-
-Puedes probar la API utilizando herramientas como **Postman** o **cURL**. A continuación, se detallan los pasos para probar cada uno de los endpoints disponibles.
-
-## Endpoints Disponibles
 
 1. **Registro de Usuario**
 2. **Inicio de Sesión**
