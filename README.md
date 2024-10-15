@@ -80,6 +80,27 @@ Desarrolla una aplicación que exponga una **API RESTful** para la **creación d
 
 El proyecto cuenta con un Dockerfile para una puesta en marcha sencilla, adicionalmente cuenta con una live demo en railway
 
+## Swagger
+
+Para facilitar la exploración y prueba de la API, se ha habilitado Swagger UI.
+
+**URL de Swagger UI:**
+
+https://testnisum-production.up.railway.app/swagger-ui/index.html
+
+**Descripción:**
+
+Elimina un usuario por ID.
+
+Encabezados necesarios:
+
+- Authorization: Bearer tu-token-jwt-generado
+
+## Iniciar el servicio REST en local
+
+Para ello se puede utilizar en la raíz del proyecto el comando de terminal `mvnw spring-boot:run` En este caso, se dejó el puerto por defecto (8080).
+Para ejecutar los test seria con el comando `mvn test`
+
 # Cómo Probar la API
 
 La aplicación está desplegada y disponible en la siguiente URL:
@@ -369,26 +390,6 @@ Encabezados necesarios:
 - Authorization: Bearer tu-token-jwt-generado
 
 
-## Swagger
-
-Para facilitar la exploración y prueba de la API, se ha habilitado Swagger UI.
-
-**URL de Swagger UI:**
-
-https://testnisum-production.up.railway.app/swagger-ui/index.html
-
-**Descripción:**
-
-Elimina un usuario por ID.
-
-Encabezados necesarios:
-
-- Authorization: Bearer tu-token-jwt-generado
-
-## Iniciar el servicio REST en local
-
-Para ello se puede utilizar en la raíz del proyecto el comando de terminal `mvnw spring-boot:run` En este caso, se dejó el puerto por defecto (8080).
-Para ejecutar los test seria con el comando `mvn test`
 
 ## Diagrama de la solución (Usando mermaid)
 ```mermaid
