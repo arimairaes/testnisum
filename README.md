@@ -383,7 +383,7 @@ Encabezados necesarios:
 
 - Authorization: Bearer tu-token-jwt-generado
 
-
+```
 graph LR
     subgraph Cliente
         A[Cliente (Postman/Navegador)]
@@ -415,5 +415,5 @@ graph LR
 
     Aplicación --> G
     G --> H
-
+```
 
