@@ -243,22 +243,153 @@ Registra un nuevo usuario con nombre, correo, contraseña y una lista de teléfo
   ]
 }
 ```
-Ejemplo con cURL:
-curl -X POST \
-  https://testnisum-production.up.railway.app/api/users/register \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "name": "Juan Rodriguez",
-    "email": "juan@rodriguez.org",
-    "password": "Hunter2!",
-    "phones": [
-      {
-        "number": "1234567890",
-        "citycode": "1",
-        "countrycode": "57"
-      }
-    ]
-  }'
+
+
+## 2. Inicio de Sesión
+
+**Endpoint:**
+
+- **Método HTTP:** `POST`
+- **URL:** `/login`
+
+**URL completa:**
+
+https://testnisum-production.up.railway.app/api/users/login
+
+
+**Descripción:**
+
+Autentica al usuario y devuelve un token JWT
+
+**Cuerpo de la solicitud (JSON):**
+
+```json
+{
+  "email": "juan@rodriguez.org",
+  "password": "Hunter2!"
+}
+```
+
+## 3. Obtener Usuario por ID
+
+**Endpoint:**
+
+- **Método HTTP:** `GET`
+- **URL:** `/{id}`
+
+**URL completa:**
+
+https://testnisum-production.up.railway.app/api/users/{id}
+
+
+**Descripción:**
+
+Devuelve los detalles de un usuario específico.
+
+Encabezados necesarios:
+
+- Authorization: Bearer tu-token-jwt-generado
+
+
+
+## 4. Listar Todos los Usuarios
+
+
+**Endpoint:**
+
+- **Método HTTP:** `GET`
+- **URL:** `/`
+
+**URL completa:**
+
+https://testnisum-production.up.railway.app/api/users/
+
+**Descripción:**
+
+Devuelve una lista de todos los usuarios registrados.
+
+
+Encabezados necesarios:
+
+- Authorization: Bearer tu-token-jwt-generado
+
+
+## 5. Actualizar Usuario
+
+
+**Endpoint:**
+
+- **Método HTTP:** `PUT`
+- **URL:** `/{id}`
+
+**URL completa:**
+
+https://testnisum-production.up.railway.app/api/users/{id}
+
+
+**Descripción:**
+
+Actualiza los detalles de un usuario existente.
+
+Encabezados necesarios:
+
+- Authorization: Bearer tu-token-jwt-generado
+- Content-Type: application/json
+
+**Cuerpo de la solicitud (JSON):**
+
+```json
+{
+  "name": "Juan R. Actualizado",
+  "email": "juan.actualizado@rodriguez.org",
+  "password": "NuevaContraseña1!",
+  "phones": [
+    {
+      "number": "0987654321",
+      "citycode": "2",
+      "countrycode": "57"
+    }
+  ]
+}
+
+```
+## 6. Eliminar Usuario
+
+**Endpoint:**
+
+- **Método HTTP:** `DELETE`
+- **URL:** `/{id}`
+
+**URL completa:**
+
+https://testnisum-production.up.railway.app/api/users/{id}
+
+
+**Descripción:**
+
+Elimina un usuario por ID.
+
+Encabezados necesarios:
+
+- Authorization: Bearer tu-token-jwt-generado
+
+
+## Swagger
+
+Para facilitar la exploración y prueba de la API, se ha habilitado Swagger UI.
+
+**URL de Swagger UI:**
+
+https://testnisum-production.up.railway.app/swagger-ui/index.html
+
+**Descripción:**
+
+Elimina un usuario por ID.
+
+Encabezados necesarios:
+
+- Authorization: Bearer tu-token-jwt-generado
+
 
 
 
