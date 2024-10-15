@@ -384,5 +384,36 @@ Encabezados necesarios:
 - Authorization: Bearer tu-token-jwt-generado
 
 
+graph LR
+    subgraph Cliente
+        A[Cliente (Postman/Navegador)]
+    end
+
+    subgraph Aplicación[Aplicación Spring Boot]
+        B[Controladores]
+        C[Servicios]
+        D[Repositorios]
+        E[(Base de Datos en Memoria)]
+    end
+
+    subgraph Seguridad
+        F[JWT Util]
+    end
+
+    subgraph Despliegue[Despliegue]
+        G[Docker]
+        H[Railway]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    C --> F
+    B --> F
+
+    Aplicación --> G
+    G --> H
 
 
