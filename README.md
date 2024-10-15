@@ -382,6 +382,12 @@ Elimina un usuario por ID.
 Encabezados necesarios:
 
 - Authorization: Bearer tu-token-jwt-generado
+
+## Iniciar el servicio REST en local
+
+Para ello se puede utilizar en la raíz del proyecto el comando de terminal mvnw spring-boot:run. En este caso, se dejó el puerto por defecto (8080).
+Para ejecutar los test seria con el comando mvn test
+
 ## Diagrama de la solución (Usando mermaid)
 ```mermaid
 graph LR
