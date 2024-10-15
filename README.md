@@ -385,22 +385,22 @@ Encabezados necesarios:
 
 ```mermaid
 graph LR
-    subgraph Cliente
-        A[Cliente (Postman/Navegador)]
+    subgraph cliente ["Cliente"]
+        A["Cliente (Postman o Navegador)"]
     end
 
-    subgraph Aplicación[Aplicación Spring Boot]
+    subgraph aplicacion ["Aplicación Spring Boot"]
         B[Controladores]
         C[Servicios]
         D[Repositorios]
-        E[(Base de Datos en Memoria)]
+        E["Base de Datos en Memoria"]
     end
 
-    subgraph Seguridad
+    subgraph seguridad ["Seguridad"]
         F[JWT Util]
     end
 
-    subgraph Despliegue[Despliegue]
+    subgraph despliegue ["Despliegue"]
         G[Docker]
         H[Railway]
     end
@@ -413,7 +413,9 @@ graph LR
     C --> F
     B --> F
 
-    Aplicación --> G
+    aplicacion --> G
     G --> H
+
+
 ```
 
